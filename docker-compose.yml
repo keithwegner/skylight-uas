@@ -1,8 +1,9 @@
-version: '3.7'
+version: '3.2'
 
 services:
 
   skylight-cucs:
+    privileged: true
     build: .
     environment:
       - DISPLAY=host.docker.internal:0
